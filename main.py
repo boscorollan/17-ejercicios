@@ -124,10 +124,13 @@ if __name__ == "__main__":
 
 
 
+#EJERCICIO 8
 
+from ejercicio8.aqueologia import ActuacionArqueologica
 
-
-
+if __name__ == "__main__":
+    actuacion = ActuacionArqueologica("2023-01-01", "2023-06-30", "excavación")
+    print(actuacion)
 
 
 
