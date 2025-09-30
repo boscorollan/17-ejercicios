@@ -1,4 +1,4 @@
-from ejercicio3.alpha import Cuadro
+from alpha import Cuadro
 gioconda_prado = Cuadro(
     titulo="Gioconda de El Prado",
     adscripcion_cronologica="1503 - 1516",

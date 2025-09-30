@@ -1,4 +1,4 @@
-from ejercicio3.alpha import Cuadro
+from alpha import Cuadro
 
 la_gioconda = Cuadro(
     titulo="La Gioconda",
