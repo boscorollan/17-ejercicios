@@ -7,9 +7,27 @@ from ejercicio1.figura import Figura
 from ejercicio1.cuadrado import Cuadrado
 from ejercicio1.elipse import Elipse
 
-mi_circulo = Circulo(5)
-print(f"El área del círculo es: {mi_circulo.area():.2f}")
-print(f"El perímetro del círculo es: {mi_circulo.perimetro():.2f}")
+
+circuloBosco = Circulo(5)
+print(circuloBosco)
+Rectangulo=Rectangulo(4,6)
+print(Rectangulo)
+cuadrado=Cuadrado(4)
+print(cuadrado)
+eli=Elipse(6,4)
+print(eli)   
+
+
+
+
+
+
+
+
+
+
+
+
 
 #ejercicio 6
 from ejercicio6.personaje import Persona  
