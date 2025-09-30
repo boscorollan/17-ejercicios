@@ -53,3 +53,5 @@ class Persona:
     #representacion en cadena
     def __str__(self):
         return f"{self.__nombre} se apellida {self.__apellido1} {self.__apellido2}, su fecha de nacimiento es: {self.__fecha_nacimiento}, Sexo: {self.__sexo}, ID: {self.__num_id}"
+
+     

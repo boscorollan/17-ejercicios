@@ -56,8 +56,34 @@ if __name__ == "__main__":
     print(catedral_santiago)
 
 
+#EJERCICIO 5
+# --- Instanciación de objetos de las clases de figuras ---
+from ejercicio1.circulo import Circulo
+from ejercicio1.rectangulo import Rectangulo
+from ejercicio1.cuadrado import Cuadrado
+from ejercicio1.elipse import Elipse
 
+# Círculo negro de radio 1
+circulo = Circulo(1)
+print('Objeto círculo:', circulo)
 
+# Rectángulo naranja de longitud 3 y anchura 1
+rectangulo = Rectangulo(3, 1)
+print('Objeto rectángulo:', rectangulo)
+
+# Cuadrado azul de lado 1.5
+cuadrado = Cuadrado(1.5)
+print('Objeto cuadrado:', cuadrado)
+
+# Elipse amarilla de eje mayor 3 y eje menor 1
+elipse = Elipse(3, 1)
+print('Objeto elipse:', elipse)
+
+#EJERCICIO 6
+from ejercicio6.personaje import Persona
+
+Bosco = Persona("Bosco", "Rollán", "Agudo","27 de julio de 2006", "AAAAAAb1")
+print(bosco.despedirse("Ana"))
 
 
 
