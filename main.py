@@ -36,8 +36,15 @@ print(diana)
 
 
 #EJERCICIO 3
+from ejercicio3.alpha import Cuadro
+from ejercicio3.gioconda import la_gioconda
+from ejercicio3.gioconda_prado import gioconda_prado
+
+print(la_gioconda)
+print(gioconda_prado)
 
 
+#EJERCICIO 4
 
 
 
