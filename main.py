@@ -134,8 +134,12 @@ if __name__ == "__main__":
 
 
 
+#EJERCICIO 9
 
+from ejercicio9.gio import la_gioconda
+print(la_gioconda)
 
+#EJERCICIO 10
 
 
 
