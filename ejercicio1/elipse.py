@@ -27,4 +27,8 @@ class Elipse(Figura):
         a = self.__eje_mayor / 2
         b = self.__eje_menor / 2
         return math.pi * (3*(a+b) - math.sqrt((3*a+b)*(a+3*b)))
+    
+    #representacion en cadena
+    def __str__(self):
+        return f"El area de la elipse es: {self.area()} y el perímetro es: {self.perimetro()}"
 

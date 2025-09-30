@@ -17,3 +17,6 @@ class Cuadrado(Figura):
 
     def perimetro(self):
         return 4 * self.__lado
+#representacion en cadena
+    def __str__(self):
+        return f"El area del cuadrado es: {self.area()} y el perímetro es: {self.perimetro()}"

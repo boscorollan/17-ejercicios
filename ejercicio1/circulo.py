@@ -13,3 +13,7 @@ class Circulo(Figura):
 
     def perimetro(self):
         return 2 * math.pi * self.radio
+    
+    #representacion en cadena
+    def __str__(self):
+        return f"El area del circulo es: {self.area()} y el perímetro es: {self.perimetro()}"

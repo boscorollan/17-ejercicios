@@ -24,3 +24,7 @@ class Rectangulo(Figura):
 
     def perimetro(self):
         return 2 * (self.__base + self.__altura)
+
+    #representacion en cadena
+    def __str__(self):
+        return f"El area del rectangulo es: {self.area()} y el perímetro es: {self.perimetro()}"
