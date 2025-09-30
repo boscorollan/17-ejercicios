@@ -19,6 +19,48 @@ print(eli)
 
 
 
+#EJERCICIO 2
+from ejercicio2.al import Persona
+carlos = Persona("Carlos", "Windsor", titulo="de Gales")
+diana = Persona("Diana", "de Gales", apellido_soltera="Spencer")
+guillermo = Persona("Guillermo", "Windsor", titulo="de Gales")
+kate = Persona("Kate", "Windsor", apellido_soltera="Middleton")
+
+guillermo.set_padres(carlos, diana)
+guillermo.casar_con(kate)
+
+print(guillermo)
+print(kate)
+print(carlos)
+print(diana)
+
+
+#EJERCICIO 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
