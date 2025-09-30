@@ -86,6 +86,40 @@ Bosco = Persona("Bosco", "Rollán", "Agudo","27 de julio de 2006", "AAAAAAb1")
 print(bosco.despedirse("Ana"))
 
 
+#EJERCICIO 7
+from ejercicio7.proyecto import Persona
+# Ejemplo de instanciación de objetos
+if __name__ == "__main__":
+    # Crear personas
+    ana = Persona("Ana López", "Desarrolladora", "ana@empresa.com")
+    juan = Persona("Juan Pérez", "Analista", "juan@empresa.com")
+    laura = Persona("Laura Ruiz", "Jefa de proyecto", "laura@empresa.com")
+
+    # Crear equipo y añadir miembros
+    equipo1 = Equipo("Equipo Backend")
+    equipo1.agregar_miembro(ana)
+    equipo1.agregar_miembro(juan)
+    equipo1.agregar_miembro(laura)
+
+    # Crear tareas
+    tarea1 = Tarea("Diseño de base de datos", "Modelar la base de datos principal", juan, "2025-10-01", "2025-10-10", "En progreso")
+    tarea2 = Tarea("Implementación API", "Desarrollar endpoints REST", ana, "2025-10-11", "2025-10-25", "Pendiente")
+
+    # Crear proyecto y asociar tareas y equipo
+    proyecto = Proyecto("Sistema de Gestión", "Proyecto para gestionar inventario", "2025-10-01", "2025-12-31", "Activo")
+    proyecto.agregar_tarea(tarea1)
+    proyecto.agregar_tarea(tarea2)
+    proyecto.asignar_equipo(equipo1)
+
+    # Mostrar información
+    print(f"Proyecto: {proyecto.nombre} - {proyecto.descripcion}")
+    print(f"Equipo: {proyecto.equipo.nombre}")
+    print("Miembros:")
+    for miembro in proyecto.equipo.miembros:
+        print(f"  - {miembro.nombre} ({miembro.rol})")
+    print("Tareas:")
+    for tarea in proyecto.tareas:
+        print(f"  - {tarea.titulo}: {tarea.estado} (Responsable: {tarea.responsable.nombre})")
 
 
 
